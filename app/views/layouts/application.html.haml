@@ -1,0 +1,63 @@
+!!! 5
+%html
+  %head
+  %title Codriver
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+  = csrf_meta_tags 
+  %body.font.body-width
+    .div.nav
+      %h1.inline.font-md codriver
+      %ul.inline
+        %li.inline
+          %a{href: '#'} States
+        %li.inline
+          %a{href: '#'} FAQ
+        %li.inline
+          %a{href: '#'} About
+      %div.inline.float-right
+        %a{ href: '/signup' }
+          Signup
+      %div.inline.float-right
+        %a{ href: '/login' }
+          Login
+    = yield
+    .footer
+      %ul
+        %li
+          %a{href: '#'} Discover
+          %ul
+            %li
+              %a{href: '#'} Safety
+            %li
+              %a{href: '#'} Drive
+            %li
+              %a{href: '#'} States
+            %li
+              %a{href: '#'} Help
+        %li
+          %a{href: '#'} About
+          %ul
+            %li
+              %a{href: '#'} Press
+            %li
+              %a{href: '#'} Jobs
+            %li
+              %a{href: '#'} Affiliates
+            %li
+              %a{href: '#'} Blog
+        %li
+          %a{href: '#'} Drivers
+          %ul
+            %li
+              %a{href: '#'} Courses
+            %li
+              %a{href: '#'} Eligibility
+            %li
+              %a{href: '#'} Certification
+            %li
+              %a{href: '#'} Legal
+      %button Sign up
+      %p 2015 codriver - terms - privacy
+      %h4.large back to top
+

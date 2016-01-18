@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codriver</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="nav">
+    <h1>codriver</h1>
+    <ul>
+      <li><a href="#">States</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+  <%= yield %>
+  <div class="footer">
+    <ul>
+      <li><a href="#">Discover</a>
+        <ul>
+          <li><a href="#">Safety</a></li>
+          <li><a href="#">Drive</a></li>
+          <li><a href="#">States</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a>
+        <ul>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Drivers</a>
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Eligibility</a></li>
+          <li><a href="#">Certification</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+      </li>
+    </ul>
+    <button>Sign up</button>
+    <p>2015 codriver - terms - privacy</p>
+    <h4>back to top</h4>
+  </div>
+</body>
+</html>
